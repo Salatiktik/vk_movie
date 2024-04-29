@@ -1,0 +1,24 @@
+.content{
+    display: flex;
+    width: 80vw;
+    padding: 5vh;
+    min-height: 82vh;
+    flex-direction: column;
+    background-color: #CE5A67;
+}
+
+.darkContent{
+    display: flex;
+    width: 80vw;
+    padding: 5vh;
+    min-height: 82vh;
+    flex-direction: column;
+    background-color: #1F1717;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

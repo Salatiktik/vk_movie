@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from './components/AppRouter/AppRouter';
+import Header from './components/header/header';
+import WebFont from 'webfontloader';
 
 function App() {
+  document.body.style.backgroundColor = "#F4BF96";
+  document.body.style.color = "#FCF5ED";
+  document.body.style.fontFamily = "Oswald"
+  document.body.style.padding = 0;
+  document.body.style.margin = 0;
+
+  useEffect(()=>{
+    WebFont.load({
+      google: {
+        families: ['Oswald']
+      }
+    })
+  },[])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header/>
+      <AppRouter />
+    </BrowserRouter>
   );
 }
 

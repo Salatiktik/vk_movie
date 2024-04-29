@@ -1,0 +1,31 @@
+.paginator{
+    width: 48vmin;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2vw;
+    margin: 2vh 0;
+}
+
+.pageButton{
+    min-width: 3vmin;
+    height: 3vmin;
+    border: none;
+    background-color: #352020;
+    color: #F4BF96;
+    font-size: 2vh;
+    align-items: center;
+    border-radius: 1vh;
+    cursor: pointer;
+}
+
+.pageButton:disabled{
+    min-width: 3vmin;
+    height: 3vmin;
+    border: none;
+    background-color: #F4BF96;
+    color: #452f2f;
+    font-size: 2vh;
+    align-items: center;
+    border-radius: 1vh;
+    cursor:default;
+}
